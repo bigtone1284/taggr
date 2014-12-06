@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header>
+		<ul>
+		<li><a class="logo" href="<% locations_path %>"><img src="https://mail.google.com/mail/u/0/?ui=2&ik=43da42c106&view=fimg&th=14a2138877649aec&attid=0.1&disp=inline&realattid=f_i3df007n0&safe=1&attbid=ANGjdJ8go7TYR_Gk3C_4UBnJkakoV6E5EZwkPazvQKoSu7WibLYPyXfwr5GDJq7QXeoF3YvkEUOR12hq6Ncf3rWTHX240d5p7VFihiX-HMDV1cTFPCEr07QMSYQiuE8&ats=1417903542890&rm=14a2138877649aec&zw&sz=w1256-h642"></a></li>
+		<li class="li"><%= link_to "about", locations_path%></li>
+		<li class="li"><%= link_to "log in", locations_path %></li>
+	</ul>
+	</header>
 
 <%= yield %>
 
 </body>
 </html>
+
+http://localhost:3000/images/Taggr-App_Logo.png

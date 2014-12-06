@@ -30,21 +30,9 @@ gem 'geocoder'
 gem 'awesome_print',  group: :development
 gem 'fusion_tables'
 gem 'httparty'
-gem 
-
-group :development do
-  gem 'rspec-rails'
-  gem 'rspec-collection_matchers'
-  gem 'shoulda-matchers', require: false
-end
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-
-
-gem 'rails_12factor', group: :production
-gem 'googlecharts'
-
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -54,3 +42,4 @@ gem 'googlecharts'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+

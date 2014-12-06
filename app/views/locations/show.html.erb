@@ -1,3 +1,5 @@
-<% @location.images.each do |image| %>
+<%= link_to "Add a photo to this site!", new_image_path %>
+
+<% @location.images.order(created_at: :desc).each do |image| %>
 	<img src=<%= "#{image.img_url}"  %>>
 <% end %>

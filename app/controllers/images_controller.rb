@@ -13,9 +13,12 @@ class ImagesController < ApplicationController
 	end
 
 	def create
+
 		@image = Image.new(image_params)
+		@image.user_id = User.first.id
+		@image.location_id = Location.find(4).id
 		if @image.save
-			redirect_to image_path(@image)
+			redirect_to location_path(Location.find(4).id)
 		else
 			render :new
 		end
@@ -46,6 +49,6 @@ class ImagesController < ApplicationController
 	private
 
 	def image_params
-		params.require(:image).permit(:name,:nationality,:genre,:photo_url)
+		params.require(:image).permit(:location_id,:user_id,:img_url)
 	end
 end

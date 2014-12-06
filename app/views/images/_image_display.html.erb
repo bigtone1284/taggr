@@ -1,5 +1,6 @@
-<div class="image_box">
-		<a href="/images/<%= image.id %>"><img class="thumbnail" src="<%= image.img_url%>"></a>
+<div class="image_box" style="background: url(<% image.img_url %>)">
 	<p><%= @user.username%></p>
+	<a href="/images/<%= image.id %>"><p>image page</p></a>
+	<p><%= render "tags" %></p>
 	<p class="image_stat"><%= image.created_at %><a href="/images/<%=image.id%>/edit">Edit</a></p>
 </div>

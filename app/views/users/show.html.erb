@@ -3,13 +3,3 @@
 	<p class="post_stat"> | <a href="/users/<%=@user.id%>/edit">Edit</a>
 	</p>
 </div>
-
-<% @user.posts.each do |post| %>
-	
-	<div class="image_box">
-		<a href="/images/<%= image.id %>"><img class="thumbnail" src="<%= image.img_url%>"></a>
-	<p><%= @user.username%></p>
-	<p class="image_stat"><%= image.created_at %><a href="/images/<%=post.id%>/edit">Edit</a></p>
-	</div>
-
-<% end %>

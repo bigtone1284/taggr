@@ -1,0 +1,14 @@
+<div id="columns">
+	<% @users.each do |user| %>
+		
+		<div class="post_box user_bkgd">
+			<p><%= user.username %></p>
+			<a href="/users/<%= user.id %>"></a>
+		<p class="post_stat"><%= user.bio %><br><%=user.location%> | 
+			<% if user.id == session[:current_user_id] %>
+				<a href="/authors/<%=author.id%>/edit">Edit</a></p>
+			<% end %>
+		</div>
+
+	<% end %>
+</div>

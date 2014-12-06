@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20141206185122) do
 
   create_table "images", force: true do |t|
     t.string   "img_url"
+    t.integer  "year"
     t.integer  "location_id"
     t.integer  "user_id"
     t.datetime "created_at"

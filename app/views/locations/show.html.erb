@@ -1,4 +1,4 @@
-<%= link_to "Add a photo to this site!", new_image_path %>
+<div class="add_photo"><%= link_to "Add a photo to this site!", new_image_path %><br><%= flash[:success] %></div>
 
 <% @location.images.order(created_at: :desc).each do |image| %>
 	<img src=<%= "#{image.img_url}"  %>>

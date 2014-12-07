@@ -16,9 +16,10 @@ class ImagesController < ApplicationController
 
 		@image = Image.new(image_params)
 		@image.user_id = User.first.id
-		@image.location_id = Location.find(4).id
+		@image.location_id = Location.find(1).id
 		if @image.save
-			redirect_to location_path(Location.find(4).id)
+			flash[:success] = "Image Added!"
+			redirect_to location_path(Location.find(1).id)
 		else
 			render :new
 		end

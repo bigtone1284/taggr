@@ -54,3 +54,13 @@ header li {
 a:hover {
 	color: darkgrey;
 }
+
+img {
+	height: 400px;
+}
+
+.add_photo {
+	width: 100%;
+	padding:5px;
+	background: limegreen;
+}
